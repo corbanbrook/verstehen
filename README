@@ -1,0 +1,33 @@
+                                  
+                                  Verstehen
+
+Verstenen is a list comprehension library for Ruby. It attemps to emulate listi
+comprehension teqniques from the Python programming language. 
+
+Install:
+
+Add the gemcutter repository to your gem sources if you have not already done so:
+
+  sudo gem sources -a http://gemcutter.org
+
+Install the gem from gemcutter:
+
+  sudo gem install verstehen
+
+Usage:
+
+  require 'rubygems'
+  require 'verstehen'
+
+  list { x * 16 }.for(:x).in { 0..16 }.if { x % 4 == 0 }.comprehend
+
+  => [0, 64, 128, 192, 256]
+
+
+
+
+@corban                                                    weare.buildingsky.net
+________________________________________________________________________________
+
+       Copyright (c) 2009 Corban Brook, released under the MIT license
+                                                                                  
