@@ -1,7 +1,7 @@
                                   
                                   Verstehen
 
-Verstenen is a list comprehension library for Ruby. It attemps to emulate listi
+Verstenen is a list comprehension library for Ruby. It attemps to emulate list
 comprehension teqniques from the Python programming language. 
 
 Install:

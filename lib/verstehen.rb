@@ -1,5 +1,3 @@
-require 'verstehen/list'
-
 module Kernel
   def list &block; Verstehen::List.new &block; end
 end
@@ -9,3 +7,5 @@ module Verstehen
   
   class Context; end
 end
+
+require 'verstehen/list'

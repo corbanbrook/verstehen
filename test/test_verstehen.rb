@@ -1,10 +1,6 @@
 require 'helper'
 
 class TestVerstehen < Test::Unit::TestCase
-#  should "probably rename this file and start testing for real" do
-#    flunk "hey buddy, you should probably rename this file and start testing for real"
-#  end
-
   def test_simple
     assert_equal(
       [0, 1, 2, 3, 4],
@@ -39,7 +35,7 @@ class TestVerstehen < Test::Unit::TestCase
   def test_3d_range
    assert_equal(
     [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 0, 2, 4, 0, 0, 0, 0, 2, 4, 0, 4, 8],
-    list { x * y * z }.for(:x).in{ 0...3 }.for(:y).in{ 0...3 }.for(:z).in{0...3}.comprehend)
+    list { x * y * z }.for(:x).in{ 0...3 }.for(:y).in{ 0...3 }.for(:z).in{ 0...3 }.comprehend)
   end
 
   def test_reference_outer
